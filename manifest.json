@@ -1,0 +1,20 @@
+{
+  "name": "blockXSS",
+  "description": "Block XSS Requests",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/",
+    "https://*/",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "XSS script tag blocker"
+  },
+  "manifest_version": 2
+}
